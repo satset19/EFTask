@@ -54,6 +54,9 @@ export default defineComponent({
         placeholder="Select date end" v-model="dataDate.start" />
     </div>
   </div>
-  <p v-if="dataDate.start.length > 0">{{ rangeDay(dataDate.start, dataDate.end) }}</p>
+  <div class="flex justify-center w-screen">
+
+    <p v-if="dataDate.start.length > 0">{{ rangeDay(dataDate.start, dataDate.end) }}</p>
+  </div>
   <!-- <p>{{ dataDate.end ? new Date(dataDate.end) : "" }}</p> -->
 </template>
